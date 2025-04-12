@@ -2,8 +2,6 @@
 
 A comprehensive framework for human segmentation in images and videos using Mask2Former models.
 
-![Segmentation Example](result.jpg)
-
 ## Overview
 
 This project provides tools for detecting and segmenting humans in different media types:
@@ -188,14 +186,6 @@ Default model: `facebook/mask2former-swin-base-coco-panoptic`
 - Overlapping individuals may sometimes be merged into a single instance
 - The COCO evaluation requires valid annotations in the expected format
 
-## Examples
-
-### Image Segmentation Result
-![Image Segmentation Example](result.jpg)
-
-### Evaluation Metrics
-![Evaluation Metrics](evaluation_results.png)
-
 ## Evaluation Metrics Explained
 
 The evaluation produces four key metrics:
@@ -206,17 +196,3 @@ The evaluation produces four key metrics:
 - **Mean_IoU**: Mean Intersection over Union across all detected instances
 
 Higher values indicate better segmentation quality, with a maximum possible value of 1.0.
-
-## License
-
-This project is released under the MIT License.
-
-## Acknowledgments
-
-- The Mask2Former model is from the Hugging Face Transformers library
-- Evaluation code uses the COCO API (pycocotools)
-- Inspiration from various segmentation frameworks and research papers
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
