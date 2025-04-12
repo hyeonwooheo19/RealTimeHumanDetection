@@ -1,0 +1,11 @@
+# For image segmentation
+python image_segmentation_windows.py --image image/image1.png --output result.jpg
+
+# For video segmentation
+python video_segmentation_windows.py --video path/to/video.mp4 --output processed.mp4
+
+# For webcam segmentation
+python webcam_segmentation_windows.py --camera 0 --mode split --downsample 0.5 --output recording.mp4
+
+# For result
+python coco_evaluation.py --annotations dataset/train.json --images dataset/train_image                      
